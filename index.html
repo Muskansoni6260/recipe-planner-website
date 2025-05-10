@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Indian Recipe Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Healthy Indian Recipe Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#breakfast">Breakfast</a></li>
+                <li><a href="#lunch">Lunch</a></li>
+                <li><a href="#dinner">Dinner</a></li>
+                <li><a href="#meal-planner">Meal Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="breakfast">
+            <h2>Breakfast Recipes</h2>
+            <article>
+                <h3>Oats Upma</h3>
+                <p>A healthy twist on traditional upma using oats.</p>
+                <ul>
+                    <li>Ingredients: Oats, vegetables, spices</li>
+                    <li>Benefits: Good for Vata dosha</li>
+                </ul>
+                <button onclick="addToMealPlan('Oats Upma')">Add to Meal Plan</button>
+            </article>
+            <article>
+                <h3>Moong Dal Chilla</h3>
+                <p>Protein-rich pancakes made from moong dal.</p>
+                <ul>
+                    <li>Ingredients: Moong dal, spices, vegetables</li>
+                    <li>Benefits: Balances Pitta dosha</li>
+                </ul>
+                <button onclick="addToMealPlan('Moong Dal Chilla')">Add to Meal Plan</button>
+            </article>
+        </section>
+
+        <section id="lunch">
+            <h2>Lunch Recipes</h2>
+            <article>
+                <h3>Quinoa Vegetable Pulao</h3>
+                <p>A nutritious and filling pulao with quinoa and seasonal vegetables.</p>
+                <ul>
+                    <li>Ingredients: Quinoa, mixed vegetables, spices</li>
+                    <li>Benefits: Good for all doshas</li>
+                </ul>
+                <button onclick="addToMealPlan('Quinoa Vegetable Pulao')">Add to Meal Plan</button>
+            </article>
+        </section>
+
+        <section id="dinner">
+            <h2>Dinner Recipes</h2>
+            <article>
+                <h3>Palak Dal</h3>
+                <p>A light and nutritious dal made with spinach.</p>
+                <ul>
+                    <li>Ingredients: Spinach, lentils, spices</li>
+                    <li>Benefits: Good for Kapha dosha</li>
+                </ul>
+                <button onclick="addToMealPlan('Palak Dal')">Add to Meal Plan</button>
+            </article>
+        </section>
+
+        <section id="meal-planner">
+            <h2>Meal Planner</h2>
+            <p>Your selected meals:</p>
+            <ul id="meal-plan-list"></ul>
+            <button onclick="showMealPlan()">Show Meal Plan</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Healthy Indian Recipe Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
